@@ -1,28 +1,21 @@
-// import React from 'react'
-import Navbar from './components/Navbar'
-import Login from './components/Login'
-import Sidebar from './components/Sidebar'
-import UserPage from './components/UserPage'
-import Dashboard from './components/Dashboard'
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./components/Dashboard";
 
 const App = () => {
   return (
-    <div className="grid grid-cols-5 grid-rows-[auto_1fr] min-h-screen">
-     <div className='row-span-2'>
-
-      <Sidebar />
-     </div>
-      <div className='col-span-4'>
-
-      <Navbar  />
+    <div className="grid grid-cols-[16rem_1fr] grid-rows-[auto_1fr] min-h-screen">
+      <div className="row-span-2">
+        <Sidebar />
       </div>
-      <div className="col-span-4 p-4">
-        {/* <UserPage /> */}
+      <div>
+        <Navbar />
+      </div>
+      <div className="p-4">
         <Dashboard />
-        {/* <Login />  */}
-     </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
